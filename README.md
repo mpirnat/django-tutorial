@@ -47,43 +47,45 @@ Once you have installed these basics, let's get the working environment set up
 for the project.
 
  1. Create a new virtual environment ("virtualenv") and activate it
+  
+  On Linux or Mac OS X:
 
- On Linux or Mac OS X:
+      $ virtualenv django-precompiler
+      $ cd django-precompiler
+      $ source bin/activate
 
-    $ virtualenv django-precompiler
-    $ cd django-precompiler
-    $ source bin/activate
+  On Windows:
 
- On Windows:
-
-    > python virtualenv django-precompiler
-    > cd django-precompiler
-    > Scripts/activate.bat
+      > python virtualenv django-precompiler
+      > cd django-precompiler
+      > Scripts/activate.bat
 
  2. Clone this repository
 
- In the django-precompiler directory from the previous step:
+  In the django-precompiler directory from the previous step:
 
-    $ git clone https://github.com/mpirnat/django-tutorial.git ./src
+      $ git clone https://github.com/mpirnat/django-tutorial.git ./src
 
  3. Install Django and any other Python dependencies
 
- In the django-precompiler directory from the previous step:
+  In the django-precompiler directory from the previous step:
 
-    $ cd src
-    $ pip install -r requirements.txt
+      $ cd src
+      $ pip install -r requirements.txt
 
  4. Check to make sure everything's in good shape
 
- In the src directory from the previous step:
+  In the src directory from the previous step:
 
-    $ python prerequisites.py
+      $ python prerequisites.py
 
  5. Rewind the repository to the start of our exercises
 
- In the src directory form the previous step:
+  In the src directory form the previous step:
 
-    $ git reset --hard ex00
+      $ git reset --hard ex00
+
+  (NOTE: This won't do anything yet; we're rebuilding the repository right now for optimal clarity and so the code and tags don't quite exist here. Check back soon!)
 
 You should now be ready for the tutorial!
 
