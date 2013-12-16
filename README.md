@@ -2,7 +2,8 @@ django-tutorial
 ===============
 
 This repository contains the code for the "Web Development with Python and
-Django" tutorial session run by Mike Pirnat and David Stanek.
+Django" tutorial session run by [Mike Pirnat][mpirnat] and [David
+Stanek][dstanek].
 
 In this tutorial we'll build a full-featured website step by step using the
 Django web framework.
@@ -84,8 +85,33 @@ for the project.
 
     $ git reset --hard ex00
 
+You should now be ready for the tutorial!
+
+
+Help!
+-----
+
+If you need help getting set up, please contact Mike Pirnat (mpirnat@gmail.com)
+and David Stanek (dstanek@dstanek.com).  Please make sure to copy both of us so
+that we can make sure you get the best answer as soon as possible.
+
+
+Credits
+-------
+
+This tutorial was created by:
+
+ * [Mike Crute][mcrute]
+ * [Mike Pirnat][mpirnat]
+ * [David Stanek][dstanek]
+
+With gratitude to the Python and Django communities for their accomplishments.
+
 
 [python]: http://python.org/download/
 [git]: http://git-scm.com
 [pip]: http://www.pip-installer.org/en/latest/installing.html
 [virtualenv]: http://www.virtualenv.org/en/latest/virtualenv.html
+[mcrute]: http://mike.crute.org
+[dstanek]: http://traceback.org
+[mpirnat]: http://mike.pirnat.com
