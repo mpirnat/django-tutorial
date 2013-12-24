@@ -43,11 +43,14 @@ You'll need to install:
   conflicts in the versions of libraries they depend on.  It also keeps your
   base system installation of Python nice and clean.
 
+**If you're on Windows**, we recommend [following these
+instructions][python-windows] to get Python, Pip, and Virtualenv going.
+
 Once you have installed these basics, let's get the working environment set up
 for the project.
 
  1. Create a new virtual environment ("virtualenv") and activate it
-  
+
   On Linux or Mac OS X:
 
       $ virtualenv django-precompiler
@@ -56,7 +59,7 @@ for the project.
 
   On Windows:
 
-      > python virtualenv django-precompiler
+      > virtualenv django-precompiler
       > cd django-precompiler
       > Scripts/activate.bat
 
@@ -79,13 +82,19 @@ for the project.
 
       $ python prerequisites.py
 
+  On Windows, that looks like:
+
+      > python.exe prerequisites.py
+
  5. Rewind the repository to the start of our exercises
 
   In the src directory form the previous step:
 
       $ git reset --hard ex00
 
-  (NOTE: This won't do anything yet; we're rebuilding the repository right now for optimal clarity and so the code and tags don't quite exist here. Check back soon!)
+  **NOTE:** This won't do anything yet; we're rebuilding the repository right
+  now for optimal clarity and so the code and tags don't quite exist here.
+  Check back soon!
 
 You should now be ready for the tutorial!
 
@@ -114,6 +123,7 @@ With gratitude to the Python and Django communities for their accomplishments.
 [git]: http://git-scm.com
 [pip]: http://www.pip-installer.org/en/latest/installing.html
 [virtualenv]: http://www.virtualenv.org/en/latest/virtualenv.html
+[python-windows]: http://docs.python-guide.org/en/latest/starting/install/win/
 [mcrute]: http://mike.crute.org
 [dstanek]: http://traceback.org
 [mpirnat]: http://mike.pirnat.com
