@@ -143,6 +143,7 @@ With gratitude to the Python and Django communities for their accomplishments.
 [pip]: http://www.pip-installer.org/en/latest/installing.html
 [virtualenv]: http://www.virtualenv.org/en/latest/virtualenv.html
 [python-windows]: http://docs.python-guide.org/en/latest/starting/install/win/
+[windows-path]: http://www.java.com/en/download/help/path.xml
 [mcrute]: http://mike.crute.org
 [dstanek]: http://traceback.org
 [mpirnat]: http://mike.pirnat.com
