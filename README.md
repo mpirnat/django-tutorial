@@ -43,11 +43,30 @@ You'll need to install:
   conflicts in the versions of libraries they depend on.  It also keeps your
   base system installation of Python nice and clean.
 
+
+Setting Your Path (Windows)
+---------------------------
 **If you're on Windows**, we recommend [following these
 instructions][python-windows] to get Python, Pip, and Virtualenv going.
 
+**Be sure to update your PATH!**  This varies a bit between [different versions
+of Windows][windows-path] so use the method that's right for your OS.
+
+If you installed Python 2.7, add:
+
+    C:\Python27\;C:\Python27\Scripts\
+
+If you installed Python 3.3, add:
+
+    C:\Python33\;C:\Python33\Scripts\
+
+
+Setting up the Project
+----------------------
+
 Once you have installed these basics, let's get the working environment set up
-for the project.
+for the project.  Time to open up a command line! (Terminal in Mac OS X, good
+ol' "cmd" in Windows.)
 
  1. Create a new virtual environment ("virtualenv") and activate it
 
