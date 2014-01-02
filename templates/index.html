@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Hello Codesmash</title>
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-        <h1>Hello Codesmash</h1>
-        <p>You've just created your first Django page. Pretty cool, eh?</p>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Hello Codesmash{% endblock %}
+
+{% block content %}
+<h1>Hello Codesmash</h1>
+<p>You've just created your first Django page. Pretty cool, eh?</p>
+{% endblock %}
