@@ -49,6 +49,8 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'codesmash.urls'
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 WSGI_APPLICATION = 'codesmash.wsgi.application'
 
 
