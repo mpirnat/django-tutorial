@@ -70,6 +70,9 @@ class TalkManager(models.Manager):
     def all_approved(self):
         return self.get_query_set().filter(approved=True)
 
+    def for_user(self, user):
+        return self.get_query_set().filter(proposers=user)
+
 
 class Talk(models.Model):
 

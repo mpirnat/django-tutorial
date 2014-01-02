@@ -24,7 +24,9 @@ class TalkCreationView(CreateView):
 class TalkUpdateView(UpdateView):
 
     form_class = TalkForm
-    queryset = Talk.objects.all()
+
+    def get_queryset(self):
+        return Talk.objects.for_user(self.request.user)
 
     def get_success_url(self):
         return resolve_url("accounts:profile")
