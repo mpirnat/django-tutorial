@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Codesmash: Submit a Talk Proposal{% endblock %}
+
+{% block content %}
+<h1>Submit Talk Proposal</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>Talk Details</legend>
+        {{ form.as_p }}
+        <input type="submit" value="Save Changes" />
+    </fieldset>
+</form>
+{% endblock %}

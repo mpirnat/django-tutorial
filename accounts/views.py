@@ -2,10 +2,13 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 
 from accounts.forms import RegistrationForm
+from talks.models import Talk
 
 
 def profile(request):
-    return render(request, "accounts/profile.html")
+    return render(request, "accounts/profile.html", {
+        'proposals': Talk.objects.all(),
+    })
 
 
 def create_user(request):
