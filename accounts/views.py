@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 
 from accounts.forms import RegistrationForm
 from talks.models import Talk
 
 
+@login_required
 def profile(request):
     return render(request, "accounts/profile.html", {
         'proposals': Talk.objects.for_user(request.user),
