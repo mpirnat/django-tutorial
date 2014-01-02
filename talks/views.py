@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+from talks.models import Talk
+
+
+def all_talks(request):
+    return render(request, "talks/index.html", {
+        "all_talks": Talk.objects.all(),
+    })

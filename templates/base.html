@@ -33,6 +33,7 @@
 		<nav>
 			<ul>
 				<li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'talks:index' %}">Talks</a></li>
 				{% if user.is_authenticated %}
 				<li><a href="{% url 'accounts:profile' %}">Profile</a></li>
 				<li><a href="{% url 'auth:logout' %}">Logout</a></li>

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Talks</h1>
+<ul>
+    {% for talk in all_talks %}
+    <li><h2>{{ talk.title }} ({{ talk.audience_skill_level }})</h2>
+        <p><label>Presented In:</label></p>
+        <p>{{ talk.location }} at {{ talk.time_slot }}</p>
+
+        <p><label>Presented By:</label></p>
+        <ul>
+            {% for presenter in talk.proposers.all %}
+                {% if presenter.first_name or presenter.last_name %}
+                <li><a href="mailto:{{ presenter.email }}">{{ presenter.first_name }} {{ presenter.last_name }}</a></li>
+                {% else %}
+                <li><a href="mailto:{{ presenter.email }}">{{ presenter.username }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        <h3>Abstract</h3>
+        <p>{{ talk.abstract }}</p>
+
+        <h3>Outline</h3>
+        <p>{{ talk.outline }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
