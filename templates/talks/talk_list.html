@@ -3,7 +3,7 @@
 {% block content %}
 <h1>Talks</h1>
 <ul>
-    {% for talk in all_talks %}
+    {% for talk in talk_list %}
     <li><h2>{{ talk.title }} ({{ talk.audience_skill_level }})</h2>
         <p><label>Presented In:</label></p>
         <p>{{ talk.location }} at {{ talk.time_slot }}</p>
