@@ -4,6 +4,23 @@
 
 {% block content %}
 <h1>{% if editing %}Edit{% else %}Submit{% endif %} Talk Proposal</h1>
+
+{% if object.approved %}
+<p>Congratulations, this talk has been approved!</p>
+
+<fieldset>
+    <legend>Scheduling Details</legend>
+    <p>
+        <label for="id_time_slot">Time Slot:</label>
+        <input type="text" id="id_time_slot" value="{{ object.time_slot }}" disabled size="50"/>
+    </p>
+    <p>
+        <label for="id_location">Location:</label>
+        <input type="text" id="id_location" value="{{ object.location }}" disabled />
+    </p>
+</fieldset>
+{% endif %}
+
 <form action="" method="post">
     {% csrf_token %}
     <fieldset>
