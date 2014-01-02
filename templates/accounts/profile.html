@@ -18,7 +18,7 @@
     </tr>
     {% for proposal in proposals %}
     <tr>
-        <td>{{ proposal.title }}</td>
+        <td><a href="{% url 'talks:update' proposal.id %}">{{ proposal.title }}</a></td>
         <td>{{ proposal.talk_type }}</td>
         <td>{{ proposal.category }}</td>
         <td>{{ proposal.approved }}</td>

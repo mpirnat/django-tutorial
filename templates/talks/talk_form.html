@@ -3,7 +3,7 @@
 {% block title %}Codesmash: Submit a Talk Proposal{% endblock %}
 
 {% block content %}
-<h1>Submit Talk Proposal</h1>
+<h1>{% if editing %}Edit{% else %}Submit{% endif %} Talk Proposal</h1>
 <form action="" method="post">
     {% csrf_token %}
     <fieldset>
