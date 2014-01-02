@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load icons %}
 
 {% block title %}Codesmash: Your Profile{% endblock %}
 
@@ -21,7 +22,7 @@
         <td><a href="{% url 'talks:update' proposal.id %}">{{ proposal.title }}</a></td>
         <td>{{ proposal.talk_type }}</td>
         <td>{{ proposal.category }}</td>
-        <td>{{ proposal.approved }}</td>
+        <td>{{ proposal.approved|boolean_icon }}</td>
     {% endfor %}
 </table>
 {% endblock %}
