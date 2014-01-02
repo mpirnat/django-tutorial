@@ -24,7 +24,24 @@
 				display: block;
 				font-size: small;
 			}
+
+			nav {
+				font-size: small;
+			}
         </style>
+
+		<nav>
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				{% if user.is_authenticated %}
+				<li><a href="{% url 'accounts:profile' %}">Profile</a></li>
+				<li><a href="{% url 'auth:logout' %}">Logout</a></li>
+				{% else %}
+				<li><a href="{% url 'accounts:create' %}">Sign Up</a></li>
+				<li><a href="{% url 'auth:login' %}">Login</a></li>
+				{% endif %}
+			</ul>
+		</nav>
 
         {% block content %}
         {% endblock %}
