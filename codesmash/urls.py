@@ -4,8 +4,9 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    url(r'^$', 'codesmash.views.home', name='home'),
+    url(r'^$', 'django.contrib.flatpages.views.flatpage',
+        {'url': '/' }, name='home'),
+
     url(r'^contact/', include('contact.urls', namespace='contact')),
     url(r'^accounts/', include('django.contrib.auth.urls', namespace='auth')),
     url(r'^accounts/', include('accounts.urls', namespace='accounts')),
