@@ -111,11 +111,13 @@ ol' "cmd" in Windows.)
 
       $ git reset --hard ex00
 
-  **NOTE:** This won't do anything yet; we're rebuilding the repository right
-  now for optimal clarity and so the code and tags don't quite exist here.
-  Check back soon!
-
 You should now be ready for the tutorial!
+
+Slides
+------
+
+The current slides that accompany this tutorial are [available for viewing and
+downloading][slides].
 
 
 Help!
@@ -144,6 +146,7 @@ With gratitude to the Python and Django communities for their accomplishments.
 [virtualenv]: http://www.virtualenv.org/en/latest/virtualenv.html
 [python-windows]: http://docs.python-guide.org/en/latest/starting/install/win/
 [windows-path]: http://www.java.com/en/download/help/path.xml
+[slides]: https://speakerdeck.com/mpirnat/web-development-with-python-and-django-2014
 [mcrute]: http://mike.crute.org
 [dstanek]: http://traceback.org
 [mpirnat]: http://mike.pirnat.com
