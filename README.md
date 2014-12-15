@@ -127,6 +127,13 @@ If you need help getting set up, please contact Mike Pirnat (mpirnat@gmail.com)
 and David Stanek (dstanek@dstanek.com).  Please make sure to copy both of us so
 that we can make sure you get the best answer as soon as possible.
 
+Other Versions
+--------------
+
+Looking for a different version?
+
+ * [Version 2][v2], as presented at CodeMash 2015
+
 
 Credits
 -------
@@ -140,13 +147,14 @@ This tutorial was created by:
 With gratitude to the Python and Django communities for their accomplishments.
 
 
-[python]: http://python.org/download/
-[git]: http://git-scm.com
-[pip]: http://www.pip-installer.org/en/latest/installing.html
-[virtualenv]: http://www.virtualenv.org/en/latest/virtualenv.html
-[python-windows]: http://docs.python-guide.org/en/latest/starting/install/win/
-[windows-path]: http://www.java.com/en/download/help/path.xml
-[slides]: https://speakerdeck.com/mpirnat/web-development-with-python-and-django-2014
-[mcrute]: http://mike.crute.org
 [dstanek]: http://traceback.org
+[git]: http://git-scm.com
+[mcrute]: http://mike.crute.org
 [mpirnat]: http://mike.pirnat.com
+[pip]: http://www.pip-installer.org/en/latest/installing.html
+[python-windows]: http://docs.python-guide.org/en/latest/starting/install/win/
+[python]: http://python.org/download/
+[slides]: https://speakerdeck.com/mpirnat/web-development-with-python-and-django-2014
+[v2]: https://github.com/mpirnat/django-tutorial-v2
+[virtualenv]: http://www.virtualenv.org/en/latest/virtualenv.html
+[windows-path]: http://www.java.com/en/download/help/path.xml
