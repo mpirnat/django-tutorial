@@ -3,7 +3,9 @@ django-tutorial
 
 This repository contains the code for the "Web Development with Python and
 Django" tutorial session run by [Mike Pirnat][mpirnat] and [David
-Stanek][dstanek].
+Stanek][dstanek] at CodeMash 2013 and 2014.
+
+**This is NOT the [CodeMash 2015 version][v2].**
 
 In this tutorial we'll build a full-featured website step by step using the
 Django web framework.
