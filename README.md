@@ -109,7 +109,7 @@ ol' "cmd" in Windows.)
 
  5. Rewind the repository to the start of our exercises
 
-  In the src directory form the previous step:
+  In the src directory from the previous step:
 
       $ git reset --hard ex00
 
